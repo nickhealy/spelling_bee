@@ -2,7 +2,10 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <stdlib.h>
+#include <time.h>
 #include <algorithm>
+#include <iterator>
 
 #include "trie.hpp"
 
@@ -25,7 +28,7 @@ int main() {
     Trie root;
     std::string test;
     std::vector<std::string> words;
-    std::vector<char> letters = {'y', 's', 'b', 'd', 'a', 'l', 'r'};
+    std::vector<char> letters = {'y', 'r', 'b', 'l', 'a', 'o', 'd'};
 
     load_word_list(root);
     root.gather_words(letters, words);

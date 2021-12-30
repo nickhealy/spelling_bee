@@ -6,6 +6,7 @@
 
 const int NUM_LETTERS = 26;
 #define charToInt(ch) ((ch) - 'a');
+#define intToChar
 
 class Trie {
     public:
